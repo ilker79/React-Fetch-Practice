@@ -5,9 +5,10 @@ import './App.css';
 
 function App() {
   const [pokemon, setPokemon] = useState();
-
+const [joke,setJoke] = useState();
 useEffect(() => {
   getPokemon();
+  getJoke();
 }, [])
 
 async function getPokemon() {
@@ -16,6 +17,18 @@ async function getPokemon() {
   console.log(data);
   setPokemon(data.sprites.front_default);
 }
+
+
+async function getJoke() {
+  let res = await fetch("https://icanhazdadjoke.com/", {
+    headers: { accept: "application/json" },
+  });
+  let data = await res.json();
+  console.log(data);
+  setJoke(data.joke);
+}
+
+
 
   return (
     <div className="App">

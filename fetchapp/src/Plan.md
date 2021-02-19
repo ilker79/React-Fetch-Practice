@@ -25,6 +25,11 @@
 
 # Plan
 
+- Fetch Pokemon Api
+- Fetch dad jokes Api
+- Component Tree - Joke, Pokemon button , New Joke button, List/List Item?
+- Click button for who the winner is of the "joke off".
+
 ## Api
 
 Pokemon, dad jokes
