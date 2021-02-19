@@ -30,11 +30,11 @@
 - Component Tree
   - Joke Component and button X
   - Pokemon Component and button X
-  - Winner button (Who has the best joke )
+  - Winner button (Who has the best joke )X
     - Should receive a list.
     - 
-  - List/List Item?
-    - Add the best joke to the list.
+  - List/List Item? X
+    - Add the best joke to the list.X
   - Click button for who the winner is of the "joke off".
 
 Create random button for joke and pokemon.

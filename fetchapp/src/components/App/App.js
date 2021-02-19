@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
     <button onClick = {(e) => handleClick(e.target.value)}>Click for random Pokemon and Joke</button>
-      <Joke id = {id1} />
+      <Joke id = {id1}  />
       <Pokemon id1 = {id1} id2 ={id2} />
     </div>
   );

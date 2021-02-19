@@ -1,6 +1,6 @@
 import React, { useState, useReducer, useEffect } from "react";
 
-function Pokemon({id1 = 1, id2 = 45}) {
+function Pokemon({id1 = 25, id2 = 45}) {
   const [pokemon1, setPokemon1] = useState();
   const [pokemon2, setPokemon2] = useState();
 

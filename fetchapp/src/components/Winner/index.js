@@ -2,27 +2,34 @@ import  React,  { useState, useEffect, useReducer} from "react";
 import List from "../List"
 
 
-function WinnerList ({getJoke}){
+function WinnerList ({getJoke1, getJoke2}){
 const [winner, setWinner]= useState ([]);
 
 useEffect(() => {
-    addToList();
+    addToList1();
+      addToList2();
   },[]);
 
- function addToList(){
-     let addWinnerToArray = [...winner, getJoke];
+ function addToList1(){
+     let addWinnerToArray = [...winner, getJoke1];
      setWinner(addWinnerToArray);
     
  }
- console.log(winner);
+  function addToList2() {
+    let addWinnerToArray = [...winner, getJoke2];
+    setWinner(addWinnerToArray);
+  }
 
-return(
-    <div>
-        <button onClick={(e) => addToList(e.target.value)}>Add To List</button>
-        <List winner = {winner}/>
-</div>
-)
 
+return (
+  <div>
+    <button onClick={(e) => addToList1(e.target.value)}>Add To List</button>
+    <button onClick={(e) => addToList2(e.target.value)}>Add To List</button>
+    <List winner={winner} />
+  </div>
+);
+
+ 
 }
 
 export default WinnerList;
