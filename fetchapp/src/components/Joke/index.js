@@ -1,7 +1,8 @@
 import React, { useState, useReducer, useEffect } from "react";
+import WinnerList from "../Winner";
 
-function Joke( {id, joke, setJoke} ) {
-
+function Joke( {id} ) {
+const [joke, setJoke] = useState();
   
   useEffect(() => {
     getJoke();
@@ -12,14 +13,15 @@ function Joke( {id, joke, setJoke} ) {
       headers: { accept: "application/json" },
     });
     let data = await res.json();
-    console.log(data);
+    // console.log(data);
     setJoke(data.joke);
   }
 
   
   return (
-  <div>{joke}
-  
+  <div>
+  {joke}
+  <WinnerList getJoke={joke}/>
   </div>
   )
 }
