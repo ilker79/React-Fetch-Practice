@@ -2,13 +2,13 @@ import React from "react";
 
 
 
-function List({winner, addTolist}) {
+function List({winner}) {
     return (
         <div className="list">
             <ul>
             {winner.map((item, index) => (
                 <li key={index}>{item} 
-       
+                
             
                 </li>
             ))}
@@ -17,3 +17,5 @@ function List({winner, addTolist}) {
 
     )
 }
+
+export default List;

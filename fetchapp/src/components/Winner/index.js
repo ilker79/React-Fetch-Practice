@@ -1,5 +1,5 @@
 import  React,  { useState, useEffect, useReducer} from "react";
-
+import List from "../List"
 
 
 function WinnerList ({getJoke}){
@@ -17,7 +17,10 @@ useEffect(() => {
  console.log(winner);
 
 return(
-<button onClick={(e) => addToList(e.target.value)}>Add To List</button>
+    <div>
+        <button onClick={(e) => addToList(e.target.value)}>Add To List</button>
+        <List winner = {winner}/>
+</div>
 )
 
 }

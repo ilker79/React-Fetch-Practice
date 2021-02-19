@@ -6,13 +6,17 @@ import Pokemon from "../Pokemon";
 import Joke from "../Joke";
 
 function App() {
-  const [id, setId] = useState();
-  
+  const [id1, setId1] = useState();
+  const [id2, setId2] = useState();
 
   function handleClick(){
-  let random=  Math.floor(Math.random( )* Math.floor(649)) 
-   setId(random);
+  let random1=  Math.floor(Math.random( )* Math.floor(649)) 
+   setId1(random1);
+   let random2=  Math.floor(Math.random( )* Math.floor(649)) 
+    setId2(random2);
 }
+
+
 // function addWinnerToList(winner){
 // const newWinnersList = 
 
@@ -22,8 +26,8 @@ function App() {
   return (
     <div className="App">
     <button onClick = {(e) => handleClick(e.target.value)}>Click for random Pokemon and Joke</button>
-      <Joke id = {id} />
-      <Pokemon id = {id} />
+      <Joke id = {id1} />
+      <Pokemon id1 = {id1} id2 ={id2} />
     </div>
   );
 }
