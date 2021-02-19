@@ -25,8 +25,8 @@ function Pokemon({id1 = 25, id2 = 45}) {
 
   return(
     <div>
-      <img src={pokemon1}/>
-      <img src={pokemon2}/>
+      <img className ="pokemon-1" src={pokemon1} alt="pokemon1"/>
+      <img className ="pokemon-2" src={pokemon2} alt="pokemon1"/>
     </div>  
   )
 
