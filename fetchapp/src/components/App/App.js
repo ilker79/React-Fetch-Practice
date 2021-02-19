@@ -1,9 +1,10 @@
 import React, { useState, useReducer, useEffect } from "react";
-
+import Bungee from "../../Bungee-Joke-Battle.svg";
 // import logo from './logo.svg';
 import './App.css';
 import Pokemon from "../Pokemon";
 import Joke from "../Joke";
+
 
 function App() {
   const [id1, setId1] = useState();
@@ -26,8 +27,9 @@ function App() {
   return (
     <div className="App">
     <button onClick = {(e) => handleClick(e.target.value)}>Click for random Pokemon and Joke</button>
-      <Joke id = {id1}  />
       <Pokemon id1 = {id1} id2 ={id2} />
+      <Joke id = {id1}  />
+      
     </div>
   );
 }

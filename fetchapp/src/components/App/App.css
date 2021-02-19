@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,20 +11,21 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 50px;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +36,69 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pokemon-1 {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  margin-right: 150px;
+}
+.pokemon-2 {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  margin-left: 150px;
+}
+
+.joke1 {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  margin-right: 100px;
+}
+.space {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  margin-right: 100px;
+}
+.joke2 {
+  display: flex;
+  justify-content: center;
+  order: 5;
+  margin-left: 100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+}
+
+.addToL1 {
+  display: flex;
+  align-items: center;
+  order: 3;
+  /* margin-left: 150px; */
+}
+.addToL2 {
+  display: flex;
+  align-items: center;
+  order: 4;
+  /* margin-left: 150px; */
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }

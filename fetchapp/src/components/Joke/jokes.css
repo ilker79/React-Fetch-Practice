@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.joke1 {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  margin-right: 150px;
+}
+.space {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  margin-right: 100px;
+}
+.joke2 {
+  display: flex;
+  justify-content: center;
+  order: 3;
+  margin-left: 150px;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useReducer, useEffect } from "react";
 import WinnerList from "../Winner";
+import "../App/App.css";
 
 function Joke({id} ) {
 const [joke1, setJoke1] = useState();
@@ -27,11 +28,12 @@ const [joke2, setJoke2] = useState();
    setJoke2(data.joke);
  }
   return (
-  <div>
-  <div>
+  <div className="container">
+  <div className="joke1">
   {joke1}
   </div>
-  <div>{joke2}</div>
+  <div className="space"></div>
+  <div className="joke2">{joke2}</div>
   <WinnerList getJoke1={joke1} getJoke2= {joke2}/>
   </div>
   )

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useReducer } from "react";
 import List from "../List";
+import "../App/App.css";
 
 const initialState = [];
 
@@ -43,20 +44,26 @@ function WinnerList({ getJoke1, getJoke2 }) {
   }
 
   return (
-    <div>
+    <div className="box">
       {/* <button onClick={(e) => addToList1(e.target.value)}>Add To List</button> */}
-      <button
+      <div >
+      <button className="addToL1"
         onClick={() => dispatch({ type: "WINNER_1", value: addToList1() })}
-      >
-        Add To List
+      > 
+        Add left To List
       </button>
       {/* <button onClick={(e) => addToList2(e.target.value)}>Add To List</button> */}
-      <button
+      </div>
+      <div >
+      <button className="addToL2"
         onClick={() => dispatch({ type: "WINNER_2", value: addToList2() })}
       >
-        Add To List
+        Add Right To List
       </button>
+      </div>
+      <div>
       <List winner={state} />
+      </div>
     </div>
   );
 }
