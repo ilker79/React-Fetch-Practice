@@ -1,7 +1,7 @@
 import React, { useState, useReducer, useEffect } from "react";
 
-function Joke( {id} ) {
-  const [joke, setJoke] = useState();
+function Joke( {id, joke, setJoke} ) {
+
   
   useEffect(() => {
     getJoke();

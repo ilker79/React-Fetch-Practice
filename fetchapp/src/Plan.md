@@ -28,9 +28,13 @@
 - Fetch Pokemon Api X
 - Fetch dad jokes Api X
 - Component Tree
-  - Joke Component and button
-  - Pokemon Component and button
+  - Joke Component and button X
+  - Pokemon Component and button X
+  - Winner button (Who has the best joke )
+    - Should receive a list.
+    - 
   - List/List Item?
+    - Add the best joke to the list.
   - Click button for who the winner is of the "joke off".
 
 Create random button for joke and pokemon.

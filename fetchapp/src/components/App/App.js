@@ -7,12 +7,17 @@ import Joke from "../Joke";
 
 function App() {
   const [id, setId] = useState();
+  const [joke, setJoke] = useState();
 
   function handleClick(){
   let random=  Math.floor(Math.random( )* Math.floor(649)) 
    setId(random);
 }
+// function addWinnerToList(winner){
+// const newWinnersList = 
 
+
+//}
 
   return (
     <div className="App">
