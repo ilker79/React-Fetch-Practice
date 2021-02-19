@@ -15,7 +15,7 @@
 
 ### Critic
 
-- Risk running out of ****time****, wittle down to 1 pokemon telling jokes
+- Risk running out of \***\*time\*\***, wittle down to 1 pokemon telling jokes
 
 ### End Posibilities
 
@@ -25,13 +25,15 @@
 
 # Plan
 
-- Fetch Pokemon Api 
-- Fetch dad jokes Api
+- Fetch Pokemon Api X
+- Fetch dad jokes Api X
 - Component Tree
-    - Joke Component and button
-    - Pokemon Component and button
-    - List/List Item?
-    - Click button for who the winner is of the "joke off".
+  - Joke Component and button
+  - Pokemon Component and button
+  - List/List Item?
+  - Click button for who the winner is of the "joke off".
+
+Create random button for joke and pokemon.
 
 ## Api
 

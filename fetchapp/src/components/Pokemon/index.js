@@ -1,14 +1,14 @@
 import React, { useState, useReducer, useEffect } from "react";
 
-function Pokemon() {
+function Pokemon({id}) {
   const [pokemon, setPokemon] = useState();
 
   useEffect(() => {
     getPokemon();
-  }, []);
+  }, [id]);
 
   async function getPokemon() {
-    let res = await fetch("https://pokeapi.co/api/v2/pokemon/1/");
+    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     let data = await res.json();
     console.log(data);
     setPokemon(data.sprites.front_default);

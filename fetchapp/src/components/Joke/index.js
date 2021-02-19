@@ -1,13 +1,14 @@
 import React, { useState, useReducer, useEffect } from "react";
 
-function Joke() {
+function Joke( {id} ) {
   const [joke, setJoke] = useState();
+  
   useEffect(() => {
     getJoke();
-  }, []);
+  }, [id]);
 
   async function getJoke() {
-    let res = await fetch("https://icanhazdadjoke.com/", {
+    let res = await fetch(`https://icanhazdadjoke.com/`, {
       headers: { accept: "application/json" },
     });
     let data = await res.json();
@@ -15,7 +16,12 @@ function Joke() {
     setJoke(data.joke);
   }
 
-  return <div>{joke}</div>;
+  
+  return (
+  <div>{joke}
+  
+  </div>
+  )
 }
 
 export default Joke;
